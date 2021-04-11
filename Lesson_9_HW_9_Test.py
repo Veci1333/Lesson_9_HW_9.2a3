@@ -17,15 +17,16 @@ while zahl > 0:
 
     # Abfrage, ob nochmal gespielt werden möchte
 
-    abfrage = input("Wollen Sie nochmal? JA oder NEIN eingeben: ")
-    abfrage = abfrage.upper()
-    print(abfrage)
+    if zahl <= 0:
+        abfrage = input("Wollen Sie nochmal? JA oder NEIN eingeben: ")
+        abfrage = abfrage.upper()
+        print(abfrage)
 
-    if abfrage == "JA":
-        zahl = int(input("Bitte neue Zahl eingeben: "))
+        if abfrage == "JA":
+            zahl = int(input("Bitte neue Zahl eingeben: "))
 
-    elif abfrage != "JA" and abfrage != "NEIN":
-        print("Bitte Ja oder Nein eingeben")
+        elif abfrage != "JA" and abfrage != "NEIN":
+            print("Bitte Ja oder Nein eingeben")
 
-    elif abfrage == "NEIN":
-        print("Ihre Antwort ist " + abfrage + " Vielen Dank")
+        elif abfrage == "NEIN":
+            print("Ihre Antwort ist " + abfrage + " Vielen Dank")
